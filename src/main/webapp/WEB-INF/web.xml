@@ -5,6 +5,19 @@
 	id="WebApp_ID" version="3.1">
 
 <display-name>Spring MVC Hibernate</display-name>
+
+	<!-- Creates the Spring Container shared by all Servlets and Filters -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:/SpringConfig.xml
+		</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+
   <!-- Processes application requests -->
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
