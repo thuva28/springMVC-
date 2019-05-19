@@ -17,6 +17,7 @@ public class Test {
 		classification.setClassificationName("Spring");
 		classificationService.addClassification(classification);
 		
+		
 	}
 
 }
