@@ -12,16 +12,18 @@
 		<property name="username" value="root"></property>
 		<property name="password" value="root"></property>
 	</bean>
-
-	<bean id="classificationService"
+	
+<!-- it is used for Service annotation in spring boot  -->
+	<!-- <bean id="classificationService"
 		class="com.sgic.library.service.ClassificationServiceImpl">
 		<property name="ClassificationDao" ref="classificationDao"></property>
-	</bean>
+	</bean> -->
 
-	<bean id="classificationDao"
+<!-- it is used for repository annotation in spring boot  -->
+	<!--<bean id="classificationDao"
 		class="com.sgic.library.dao.ClassificationDaoImpl">
 		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
-	</bean>
+	</bean>-->
 
 
 	<bean id="hibernateTemplate"
