@@ -11,19 +11,6 @@
 
 </head>
 <body>
-	<table id="classificationTable">
-		<thead>
-			<tr>
-				<th>Classification Id</th>
-				<th>Classification Name</th>
-				<th>Edit</th>
-				<th>Delete</th>
-			</tr>
-		</thead>
-		<tbody>
-
-		</tbody>
-	</table>
 
 	<form:form action="/SpringMVC/save" method="post"
 		modelAttribute="classification">

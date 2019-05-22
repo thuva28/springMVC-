@@ -31,15 +31,15 @@ public class ClassificationController {
     public String save(@ModelAttribute("classification") Classification classification) {
 		System.out.println(classification.getClassificationName());
 		classificationService.addClassification(classification);
-		return null;
+		return "redirect:/classificationList";
 		
 	}
 	
-	@RequestMapping(value ="/listcalssification",  method = RequestMethod.GET)
+	@RequestMapping(value ="/classificationList",  method = RequestMethod.GET)
 	public ModelAndView save(ModelAndView modelAndView) {
 		modelAndView.setViewName("classificationList");
 		List<Classification> classificationlist= classificationService.findAllClassification();
-		modelAndView.addObject("classificationList", classificationlist);
+		modelAndView.addObject("classificationlist", classificationlist);
 		return modelAndView;
 		
 		
