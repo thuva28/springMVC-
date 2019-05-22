@@ -4,7 +4,8 @@
 <%@include file="fragment/header.jsp" %>
 
 <div class="col-8">
-
+<a  href="addclassification" class="btn btn-primary btn-lg">Add
+					Main Classification</a>
 	
 	<table class="table">
 		<thead>

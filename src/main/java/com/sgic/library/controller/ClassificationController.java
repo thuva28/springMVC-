@@ -18,9 +18,13 @@ public class ClassificationController {
 	
 	@Autowired
 	private ClassificationService classificationService;
-
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping("/") 
+	public String home(){
+	    return "index"; 
+	} 
+
+	@RequestMapping(value = "/addclassification", method = RequestMethod.GET)
 	public String printWelcome(Model model) {
 		model.addAttribute("classification", new Classification());
 		return "addclassification";

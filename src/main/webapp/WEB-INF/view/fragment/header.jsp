@@ -68,7 +68,7 @@
 					
 					    <li class="list-group-item"><a href="#" class="badge badge-primary">Home</a></li>
 						<li class="list-group-item"><a href="#" class="badge badge-primary">Books</a></li>
-						<li class="list-group-item"><a href="#" class="badge badge-primary">Main Classification</a></li>
+						<li class="list-group-item"><a href="classificationList" class="badge badge-primary">Main Classification</a></li>
 						<li class="list-group-item"><a href="#" class="badge badge-primary">Sub Classification</a></li>
 					</ul>
 				</div>
