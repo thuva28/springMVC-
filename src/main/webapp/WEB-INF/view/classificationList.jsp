@@ -1,19 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Spring MVC Library</title>
-</head>
-<body>
-	<table>
+<%@include file="fragment/header.jsp" %>
+
+<div class="col-8">
+
+	
+	<table class="table">
 		<thead>
 			<tr>
 				<th>Classification ID</th>
 				<th>Classification Name</th>
+				<th>Edit </th>
+				<th>Delete </th>
 			</tr>
 		</thead>
 		<tbody>
@@ -21,9 +20,13 @@
 			<tr>
 				<td>${classification.classificationId }</td>
 				<td>${classification.classificationName }</td>
+				<td><button type="button" class="btn btn-primary">Edit</button></td>
+				<td><button type="button" class="btn btn-warning">Delete</button></td>
 			</tr>
 			</c:forEach>
 		</tbody>
 	</table>
-</body>
-</html>
+</div>
+
+
+<%@include file="fragment/footer.jsp" %>

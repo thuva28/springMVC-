@@ -1,37 +1,31 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+
 
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<%@include file="fragment/header.jsp" %>
 
-</head>
-<body>
+<div class="col-8">
 
 	<form:form action="/SpringMVC/save" method="post"
 		modelAttribute="classification">
 		<h5>Enter Employee</h5>
 		<br>
-		<table border=1>
+		<table  class="table">
 			<tr>
 				<td>Classification ID :</td>
-				<td><form:input path="classificationId" id="classificationId" />
+				<td><form:input path="classificationId" id="classificationId" class="form-control" />
 				</td>
 			</tr>
 			<tr>
 				<td>Classification Name :</td>
-				<td><form:input path="classificationName"
+				<td><form:input path="classificationName" class="form-control"
 						id="classificationName" /></td>
 			</tr>
 		</table>
-		<input type="submit" value="Save" />
+		<input type="submit" value="Save"  class="btn btn-primary" />
 
 	</form:form>
 
+</div>
 
-</body>
-</html>
+<%@include file="fragment/footer.jsp" %>
